@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "title": "Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming",
+    "authors": "Richard S. Sutton",
+    "year": 1990,
+    "tag": "Dyna"
+  },
+  {
+    "id": 2,
+    "title": "World Models",
+    "authors": "David Ha, Jürgen Schmidhuber",
+    "year": 2018,
+    "tag": "World Model",
+    "url": "https://arxiv.org/abs/1803.10122"
+  },
+  {
+    "id": 3,
+    "title": "Learning Latent Dynamics for Planning from Pixels",
+    "authors": "Danijar Hafner et al.",
+    "year": 2019,
+    "tag": "PlaNet",
+    "url": "https://arxiv.org/abs/1811.04551"
+  },
+  {
+    "id": 4,
+    "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+    "authors": "Danijar Hafner et al.",
+    "year": 2020,
+    "tag": "Dreamer",
+    "url": "https://arxiv.org/abs/1912.01603"
+  },
+  {
+    "id": 5,
+    "title": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
+    "authors": "Julian Schrittwieser et al.",
+    "year": 2020,
+    "tag": "MuZero"
+  },
+  {
+    "id": 6,
+    "title": "Genie: Generative Interactive Environments",
+    "authors": "Jack Bruce et al.",
+    "year": 2024,
+    "tag": "Interactive World Model",
+    "url": "https://arxiv.org/abs/2402.15391"
+  },
+  {
+    "id": 7,
+    "title": "World Action Models: The Next Frontier in Embodied AI",
+    "authors": "Survey paper",
+    "year": 2026,
+    "tag": "WAM Survey"
+  },
+  {
+    "id": 8,
+    "title": "World Action Models are Zero-shot Policies",
+    "authors": "DreamZero team",
+    "year": 2026,
+    "tag": "DreamZero",
+    "url": "https://arxiv.org/abs/2602.15922"
+  },
+  {
+    "id": 9,
+    "title": "Coupling Video and Action Diffusion for Pretraining on Large Robotic Datasets",
+    "authors": "Unified World Models team",
+    "year": 2025,
+    "tag": "UWM",
+    "url": "https://arxiv.org/abs/2504.02792"
+  },
+  {
+    "id": 10,
+    "title": "Towards Autoregressive Action World Model",
+    "authors": "WorldVLA team",
+    "year": 2025,
+    "tag": "WorldVLA",
+    "url": "https://arxiv.org/abs/2506.21539"
+  },
+  {
+    "id": 11,
+    "title": "World Action Modeling with Representation Visual-Action Tokenizers",
+    "authors": "RepWAM team",
+    "year": 2026,
+    "tag": "RepWAM",
+    "url": "https://arxiv.org/abs/2606.13674"
+  },
+  {
+    "id": 12,
+    "title": "Do World Action Models Need Test-time Future Imagination?",
+    "authors": "Fast-WAM team",
+    "year": 2026,
+    "tag": "Fast-WAM",
+    "url": "https://arxiv.org/abs/2603.16666"
+  },
+  {
+    "id": 13,
+    "title": "DROID: A Large-Scale In-the-Wild Robot Manipulation Dataset",
+    "authors": "DROID team",
+    "year": 2024,
+    "tag": "Dataset"
+  },
+  {
+    "id": 14,
+    "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+    "authors": "Open X-Embodiment Collaboration",
+    "year": 2023,
+    "tag": "Dataset"
+  }
+]

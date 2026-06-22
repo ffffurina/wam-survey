@@ -1,0 +1,122 @@
+[
+  {
+    "id": "oxe",
+    "name": "Open X-Embodiment",
+    "type": "Cross-Embodiment Robot Data",
+    "scale": "1M+ real robot trajectories, 22 embodiments, 527 skills",
+    "collection": "Aggregated from many robotic learning datasets",
+    "embodiment": "Single-arm, dual-arm, mobile manipulators and other robots",
+    "hasAction": true,
+    "hasLanguage": true,
+    "use": "Cross-embodiment pretraining and action representation research",
+    "limitations": "Highly heterogeneous action frequencies, cameras, robot morphologies and language styles."
+  },
+  {
+    "id": "agibot",
+    "name": "AgiBot World / Colosseo",
+    "type": "Large-scale Real Robot Data",
+    "scale": ">1M trajectories, 217 tasks, multiple real-world scenario categories",
+    "collection": "Standardized real robot collection pipeline with human-in-the-loop verification",
+    "embodiment": "Real robots in home, retail, office, restaurant and other settings",
+    "hasAction": true,
+    "hasLanguage": true,
+    "use": "High-quality real-world pretraining source for WAMs such as DreamZero and related work",
+    "limitations": "New ecosystem; long-term external validation and reproducibility are still developing."
+  },
+  {
+    "id": "droid",
+    "name": "DROID",
+    "type": "Real Robot Pretraining Data",
+    "scale": "76K trajectories / 350h, 564 scenes, 86 tasks",
+    "collection": "Distributed real-world collection with Franka robots and multi-camera setup",
+    "embodiment": "Franka-based tabletop manipulation",
+    "hasAction": true,
+    "hasLanguage": true,
+    "use": "Commonly used in WAM/VLA pretraining and evaluation, including UWM and VLA-JEPA-like settings",
+    "limitations": "Single dominant robot platform; limited coverage of dexterous hands and humanoids."
+  },
+  {
+    "id": "bridgev2",
+    "name": "BridgeData V2",
+    "type": "Real Robot Manipulation Data",
+    "scale": "60,096 trajectories across 24 environments and 13 skills",
+    "collection": "Teleoperated and scripted robot rollouts",
+    "embodiment": "Tabletop and kitchen-style manipulation",
+    "hasAction": true,
+    "hasLanguage": true,
+    "use": "World-model pretraining, VLA training and latent-action research such as LAWM",
+    "limitations": "Task and environment diversity is useful but narrower than OXE or AgiBot-scale corpora."
+  },
+  {
+    "id": "libero",
+    "name": "LIBERO",
+    "type": "Simulation Benchmark",
+    "scale": "130 tasks in multiple suites",
+    "collection": "Simulation benchmark with expert demonstrations",
+    "embodiment": "Language-conditioned tabletop manipulation",
+    "hasAction": true,
+    "hasLanguage": true,
+    "use": "Common WAM/VLA benchmark for multitask and long-horizon evaluation",
+    "limitations": "Simulation domain; physical realism and visual diversity are limited compared with real robots."
+  },
+  {
+    "id": "calvin",
+    "name": "CALVIN",
+    "type": "Long-horizon Manipulation Benchmark",
+    "scale": "Long-horizon language-conditioned manipulation dataset and benchmark",
+    "collection": "Benchmark trajectories with language annotations",
+    "embodiment": "Tabletop manipulation",
+    "hasAction": true,
+    "hasLanguage": true,
+    "use": "Evaluating long-horizon compositional manipulation and predictive policy representations",
+    "limitations": "Embodiment and scene diversity remain relatively constrained."
+  },
+  {
+    "id": "rlbench",
+    "name": "RLBench",
+    "type": "Simulation Task Library",
+    "scale": "100 hand-designed tasks with scalable demonstration generation",
+    "collection": "Simulation and motion planning generated demonstrations",
+    "embodiment": "Tabletop robotic manipulation",
+    "hasAction": true,
+    "hasLanguage": false,
+    "use": "Synthetic data generation, task coverage, ablation and world-model evaluation",
+    "limitations": "Planner-generated behavior can differ from real human teleoperation and real robot dynamics."
+  },
+  {
+    "id": "openvid",
+    "name": "OpenVid-1M",
+    "type": "Internet Video Data",
+    "scale": ">1M text-video pairs",
+    "collection": "Large-scale open text-video corpus",
+    "embodiment": "Open-domain video, not robot-specific",
+    "hasAction": false,
+    "hasLanguage": true,
+    "use": "General video/world prior pretraining",
+    "limitations": "No robot actions, weak executability and large embodiment gap."
+  },
+  {
+    "id": "egoexo",
+    "name": "Ego-Exo4D",
+    "type": "Egocentric / Exocentric Human Demonstrations",
+    "scale": "Large-scale multi-view human skill video dataset",
+    "collection": "Synchronized ego/exo human activity recordings",
+    "embodiment": "Human hands and bodies",
+    "hasAction": false,
+    "hasLanguage": true,
+    "use": "Human-to-robot transfer, first-person skill priors and latent action learning",
+    "limitations": "Human embodiment differs from robot embodiment; retargeting and executability filtering are required."
+  },
+  {
+    "id": "unitraj",
+    "name": "UniTraj",
+    "type": "Trajectory Modeling Resource",
+    "scale": "Unified trajectory modeling framework / resource",
+    "collection": "Trajectory datasets in driving and general motion forecasting contexts",
+    "embodiment": "Vehicles / agents rather than robot manipulation",
+    "hasAction": false,
+    "hasLanguage": false,
+    "use": "Reference for long-horizon trajectory representation and cross-domain temporal modeling",
+    "limitations": "Not a standard robot manipulation dataset; relevance to WAM is indirect."
+  }
+]

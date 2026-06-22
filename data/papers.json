@@ -1,0 +1,359 @@
+[
+  {
+    "id": "dreamzero",
+    "title": "DreamZero",
+    "fullTitle": "World Action Models are Zero-shot Policies",
+    "year": 2026,
+    "type": "Joint WAM",
+    "architecture": [
+      "Diffusion",
+      "Video-Action",
+      "Zero-shot Policy"
+    ],
+    "data": [
+      "Robot Teleop",
+      "Human Video",
+      "Cross-Embodiment",
+      "AgiBot"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2602.15922",
+    "url": "https://arxiv.org/abs/2602.15922",
+    "featured": true,
+    "summary": "提出联合视频—动作扩散式 WAM，并论证 WAM 可以直接作为 zero-shot policy。",
+    "dataSummary": "约 500h AgiBot G1 teleoperation，约 7.2K episodes，22 个真实环境；还使用少量人类视频与他机器人视频研究跨本体迁移。",
+    "contribution": "把未来视频预测和动作生成深度耦合，强调数据多样性、长时程真实行为与跨本体视频对零样本泛化的重要性。",
+    "limitations": "模型和系统成本高，训练数据采集门槛高；开放复现仍依赖硬件、数据和算力条件。"
+  },
+  {
+    "id": "uwm",
+    "title": "Unified World Models",
+    "fullTitle": "Coupling Video and Action Diffusion for Pretraining on Large Robotic Datasets",
+    "year": 2025,
+    "type": "Joint WAM",
+    "architecture": [
+      "Diffusion",
+      "Unified Transformer",
+      "Video-Action"
+    ],
+    "data": [
+      "Robot Trajectories",
+      "Action-free Video",
+      "DROID",
+      "LIBERO"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2504.02792",
+    "url": "https://arxiv.org/abs/2504.02792",
+    "featured": true,
+    "summary": "将视频扩散与动作扩散耦合在统一 Transformer 中，使一个模型可兼作 policy、forward dynamics、inverse dynamics 与 video generator。",
+    "dataSummary": "使用 DROID 带动作轨迹与 action-free videos，并在 LIBERO 等任务上验证无动作视频共训练的价值。",
+    "contribution": "提供了有动作轨迹和无动作视频共同预训练的清晰框架。",
+    "limitations": "跨本体动作语义不一致问题仍未完全解决，实验规模与真实多本体复杂场景仍可扩展。"
+  },
+  {
+    "id": "worldvla",
+    "title": "WorldVLA",
+    "fullTitle": "Towards Autoregressive Action World Model",
+    "year": 2025,
+    "type": "Joint WAM",
+    "architecture": [
+      "Autoregressive",
+      "Discrete Tokens",
+      "LLM-style"
+    ],
+    "data": [
+      "LIBERO",
+      "Robot Demonstrations"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2506.21539",
+    "url": "https://arxiv.org/abs/2506.21539",
+    "featured": false,
+    "summary": "将图像、文本与动作 token 统一到自回归框架中，同时预测未来视觉与动作 chunk。",
+    "dataSummary": "主要围绕 LIBERO 数据训练和评测，使用失败轨迹过滤、no-op 过滤与 train/validation 划分。",
+    "contribution": "清晰展示了 action model 和 world model 在离散自回归框架中的结构统一。",
+    "limitations": "数据外延相对窄，对真实世界、多源异构和无动作视频利用讨论不足。"
+  },
+  {
+    "id": "dywa",
+    "title": "DyWA",
+    "fullTitle": "Dynamics-adaptive World Action Model for Generalizable Non-prehensile Manipulation",
+    "year": 2025,
+    "type": "Task-specific WAM",
+    "architecture": [
+      "Dynamics Adaptation",
+      "Teacher-Student",
+      "State Prediction"
+    ],
+    "data": [
+      "Simulation",
+      "Domain Randomization",
+      "Non-prehensile"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2503.16806",
+    "url": "https://arxiv.org/abs/2503.16806",
+    "featured": false,
+    "summary": "面向非抓取操作，联合预测动作与未来任务状态，并通过历史轨迹估计动力学变化。",
+    "dataSummary": "使用仿真 teacher policy、DAgger student 蒸馏和大规模域随机化，覆盖质量、尺度、摩擦与恢复系数。",
+    "contribution": "强调接触丰富任务中动力学覆盖比简单扩大数据量更重要。",
+    "limitations": "更偏专项 WAM，距离通用具身基础模型仍有距离。"
+  },
+  {
+    "id": "motubrain",
+    "title": "MotuBrain / Motus",
+    "fullTitle": "An Advanced World Action Model for Robot Control",
+    "year": 2026,
+    "type": "Joint WAM",
+    "architecture": [
+      "Mixture-of-Transformers",
+      "UniDiffuser-style",
+      "Multi-Expert"
+    ],
+    "data": [
+      "Data Pyramid",
+      "Human Video",
+      "Simulation",
+      "Multi-Robot",
+      "Target Robot"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2604.27792",
+    "url": "https://arxiv.org/abs/2604.27792",
+    "featured": true,
+    "summary": "构建支持 policy、world modeling、inverse dynamics 与 joint video-action prediction 的统一 WAM 底座。",
+    "dataSummary": "提出从 Web prior、egocentric human videos、synthetic data、task-agnostic data、multi-robot trajectories 到 target-robot data 的分层数据金字塔。",
+    "contribution": "把 WAM 推向数据分层、分阶段训练和工程化统一底座。",
+    "limitations": "系统复杂，数据和复现门槛较高。"
+  },
+  {
+    "id": "fastwam",
+    "title": "Fast-WAM",
+    "fullTitle": "Do World Action Models Need Test-time Future Imagination?",
+    "year": 2026,
+    "type": "Efficient WAM",
+    "architecture": [
+      "Training-time Video Co-training",
+      "Fast Policy",
+      "Ablation-driven"
+    ],
+    "data": [
+      "LIBERO",
+      "RoboTwin",
+      "Real Teleop"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2603.16666",
+    "url": "https://arxiv.org/abs/2603.16666",
+    "featured": true,
+    "summary": "系统区分训练时视频共训练和测试时显式未来想象的作用。",
+    "dataSummary": "使用 LIBERO、RoboTwin 和真实 towel-folding teleoperation 数据，比较保留/去除 video co-training 的性能变化。",
+    "contribution": "指出 WAM 收益很可能主要来自训练时视频目标塑造 world-grounded representation，而非推理时必须显式生成未来。",
+    "limitations": "对开放真实环境和更长时任务的验证仍可继续扩展。"
+  },
+  {
+    "id": "repwam",
+    "title": "RepWAM",
+    "fullTitle": "World Action Modeling with Representation Visual-Action Tokenizers",
+    "year": 2026,
+    "type": "Joint WAM",
+    "architecture": [
+      "Visual-Action Tokenizer",
+      "Causal Diffusion Transformer",
+      "Semantic Latent"
+    ],
+    "data": [
+      "Panda-70M",
+      "AgiBot",
+      "RoboMIND",
+      "RoboCOIN",
+      "InternA1"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2606.13674",
+    "url": "https://arxiv.org/abs/2606.13674",
+    "featured": true,
+    "summary": "将研究焦点从更强视频生成器转向更适合控制的视觉—动作 token 空间。",
+    "dataSummary": "使用 Panda-70M 训练语义视觉 tokenizer，并结合 AgiBot 等机器人数据进行 WAM 预训练与本体适配。",
+    "contribution": "强调 tokenizer 决定了数据能否转化为控制相关知识。",
+    "limitations": "仍需真实机器人微调，公开评测主要集中于部分基准和有限真实任务。"
+  },
+  {
+    "id": "efficientwam",
+    "title": "Efficient-WAM",
+    "fullTitle": "Efficient World Action Models for Robotic Manipulation",
+    "year": 2026,
+    "type": "Efficient WAM",
+    "architecture": [
+      "Compact Video Expert",
+      "Token-sparse Future Latents",
+      "Asymmetric Denoising"
+    ],
+    "data": [
+      "RoboTwin",
+      "Astribot S1",
+      "Human Demonstrations"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2606.10040",
+    "url": "https://arxiv.org/abs/2606.10040",
+    "featured": false,
+    "summary": "探索轻量化 WAM，降低视频分支与动作生成的推理成本。",
+    "dataSummary": "在 RoboTwin 2.0 和 Astribot S1 真实任务上验证，每任务少量人类示范即可适配。",
+    "contribution": "说明 WAM 不一定依赖巨大视频分支，控制相关未来 latent 可能比高保真像素更重要。",
+    "limitations": "真实任务规模仍有限，效率和泛化之间的边界需要更系统研究。"
+  },
+  {
+    "id": "lawM",
+    "title": "LAWM",
+    "fullTitle": "Latent Action World Models",
+    "year": 2025,
+    "type": "Data Method / WAM Precursor",
+    "architecture": [
+      "Latent Action",
+      "RSSM",
+      "World-model Pretraining"
+    ],
+    "data": [
+      "BridgeData V2",
+      "Something-Something V2",
+      "Action-free Video"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2509.18428",
+    "url": "https://arxiv.org/abs/2509.18428",
+    "featured": false,
+    "summary": "研究无动作视频能否通过 latent action world-model pretraining 改善下游策略学习。",
+    "dataSummary": "使用 BridgeData V2 机器人视频和 Something-Something V2 人类视频做无动作世界模型预训练，再在 LIBERO 和真实机器人任务上微调。",
+    "contribution": "表明学习状态转移有时比直接学习原数据动作标签更具迁移性。",
+    "limitations": "本质仍是两阶段 latent-action pretraining，而非端到端联合视频—动作采样。"
+  },
+  {
+    "id": "vlajepa",
+    "title": "VLA-JEPA",
+    "fullTitle": "Vision-Language-Action Joint Embedding Predictive Architecture",
+    "year": 2026,
+    "type": "Representation / Data Method",
+    "architecture": [
+      "JEPA",
+      "Leakage-free Prediction",
+      "Self-supervised Video"
+    ],
+    "data": [
+      "Human Video",
+      "DROID",
+      "LIBERO",
+      "SimplerEnv"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2602.10098",
+    "url": "https://arxiv.org/abs/2602.10098",
+    "featured": false,
+    "summary": "用 JEPA 式未来表征预测利用人类视频，同时避免未来帧泄漏到当前观测输入。",
+    "dataSummary": "结合大规模人类视频和 DROID 机器人轨迹预训练，再在仿真和真实任务上微调。",
+    "contribution": "指出人类视频更显著补充鲁棒性和扰动适应，而非直接补足低层机器人动力学。",
+    "limitations": "不是最严格的联合生成式 WAM，但对 WAM 数据效率问题很有参考价值。"
+  },
+  {
+    "id": "vpp",
+    "title": "Video Prediction Policy",
+    "fullTitle": "Video Prediction Policy",
+    "year": 2024,
+    "type": "WAM Precursor",
+    "architecture": [
+      "Video Prediction",
+      "Predictive Representation",
+      "Diffusion Policy"
+    ],
+    "data": [
+      "Human Video",
+      "Robot Trajectories",
+      "Internet Manipulation"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2412.14803",
+    "url": "https://arxiv.org/abs/2412.14803",
+    "featured": false,
+    "summary": "证明大规模视频预测模型的中间表征能显著提升策略学习。",
+    "dataSummary": "使用 Something-Something V2、人类/机器人操控视频、自采 Panda 和灵巧手轨迹，总计约 375K 条数据。",
+    "contribution": "为后续 WAM 的视频表征预训练提供了重要经验证据。",
+    "limitations": "动作仍通过第二阶段策略学习获得，未真正联合建模视频和动作。"
+  },
+  {
+    "id": "lingbot",
+    "title": "LingBot-VA",
+    "fullTitle": "Causal World Modeling for Robot Control",
+    "year": 2026,
+    "type": "Joint WAM",
+    "architecture": [
+      "Causal World Modeling",
+      "Autoregressive Diffusion",
+      "Robot Control"
+    ],
+    "data": [
+      "Robot Demonstrations",
+      "Video Prediction",
+      "Action Execution"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2601.21998",
+    "url": "https://arxiv.org/abs/2601.21998",
+    "featured": false,
+    "summary": "将因果视频建模与动作生成绑定起来，探索视频世界建模作为机器人控制底座。",
+    "dataSummary": "围绕 frame prediction 和 action execution 共同训练，在 RoboTwin 等机器人任务上验证。",
+    "contribution": "是联合式 WAM 的早期代表之一。",
+    "limitations": "推理时延与视觉扰动鲁棒性仍是主要挑战。"
+  },
+  {
+    "id": "tauwm",
+    "title": "τ₀-WM",
+    "fullTitle": "A Unified Video-Action World Model for Robotic Manipulation",
+    "year": 2026,
+    "type": "Joint WAM",
+    "architecture": [
+      "Video-Action Model",
+      "Action Evaluation",
+      "Supervision Mask"
+    ],
+    "data": [
+      "Robot Teleop",
+      "UMI-style Demo",
+      "Egocentric Video",
+      "Failure Data"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2606.01027",
+    "url": "https://arxiv.org/abs/2606.01027",
+    "featured": false,
+    "summary": "将 policy learning、video prediction 和 action evaluation 纳入统一 future-predictive 框架。",
+    "dataSummary": "训练语料约 27.3K 小时，包括真实机器人遥操作、过滤过的开放演示和第一视角人类交互视频。",
+    "contribution": "清晰展示了不同监督等级数据如何通过 supervision mask 统一进入 WAM。",
+    "limitations": "发布时间很新，社区复现与外部验证仍有限。"
+  },
+  {
+    "id": "colaworld",
+    "title": "CoLA-World",
+    "fullTitle": "Co-Evolving Latent Action World Models",
+    "year": 2025,
+    "type": "Boundary Case",
+    "architecture": [
+      "Latent Action",
+      "Co-evolution",
+      "World Model"
+    ],
+    "data": [
+      "Robot Video",
+      "Human Manipulation Video",
+      "Latent Action"
+    ],
+    "venue": "arXiv",
+    "arxiv": "2510.26433",
+    "url": "https://arxiv.org/abs/2510.26433",
+    "featured": false,
+    "summary": "研究 latent action model 与 world model 是否可以共同演化，而不是两阶段冻结训练。",
+    "dataSummary": "混合机器人视频与人类操作视频，重点在 latent action 学习和可控视频仿真。",
+    "contribution": "说明 LAM + world model 不一定要级联冻结，为 WAM 的 latent-action 接口提供思路。",
+    "limitations": "距离直接闭环输出 robot-native low-level action 的严格 WAM 仍有半步。"
+  }
+]

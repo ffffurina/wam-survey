@@ -1,0 +1,51 @@
+[
+  {
+    "year": "1990",
+    "title": "Dyna",
+    "stage": "理论奠基期",
+    "summary": "将模型学习、规划和执行放入同一个强化学习闭环。",
+    "relation": "为“学模型以支持行动”奠定思想基础。"
+  },
+  {
+    "year": "2018",
+    "title": "World Models",
+    "stage": "深度世界模型启动期",
+    "summary": "用 VAE + RNN + controller 证明高维视觉世界可以被压缩到潜空间中学习。",
+    "relation": "开启深度潜变量世界模型路线。"
+  },
+  {
+    "year": "2019",
+    "title": "PlaNet",
+    "stage": "潜空间规划",
+    "summary": "从像素学习 latent dynamics，并在潜空间中进行规划。",
+    "relation": "把视觉世界模型与控制更紧密结合。"
+  },
+  {
+    "year": "2020",
+    "title": "Dreamer / MuZero",
+    "stage": "强化学习落地期",
+    "summary": "Dreamer 用 imagined trajectories 优化策略；MuZero 学习面向规划的隐式模型。",
+    "relation": "说明世界模型不必只追求像素重建，而应服务决策。"
+  },
+  {
+    "year": "2024",
+    "title": "Genie / Sora",
+    "stage": "视频世界模型爆发期",
+    "summary": "大规模视频生成模型展示更强视觉连续性和开放世界动态建模能力。",
+    "relation": "暴露了“能生成未来”与“能执行动作”之间的鸿沟。"
+  },
+  {
+    "year": "2025",
+    "title": "UWM / WorldVLA / DyWA",
+    "stage": "WAM 原型期",
+    "summary": "视频—动作联合建模、自回归 action-world tokenization 和任务特化 WAM 开始出现。",
+    "relation": "WAM 从概念进入具体架构和训练范式。"
+  },
+  {
+    "year": "2026",
+    "title": "DreamZero / Fast-WAM / RepWAM / MotuBrain",
+    "stage": "WAM 系统化期",
+    "summary": "WAM 被进一步定义为可作为策略、可长期更新、可跨本体迁移的数据—模型系统。",
+    "relation": "研究重心从“有没有世界模型”转向“如何构造数据、token 和闭环反馈”。"
+  }
+]
